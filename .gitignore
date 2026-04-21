@@ -55,7 +55,6 @@ out/
 
 # Dataset and training artifacts
 backend/data/HAM10000/
-backend/best_model.pt
 backend/best_model_target80.pt
 backend/checkpoints/
 model/output/
