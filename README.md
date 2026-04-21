@@ -360,6 +360,11 @@ npm install
 npm run dev
 ```
 
+### GitHub Upload Safety Notes
+- The repository ignores environment files, local datasets, and training artifacts.
+- Model checkpoints are treated as local artifacts and are not committed by default.
+- After cloning, place your inference checkpoint at `backend/best_model.pt` (or train a new model) before starting the backend.
+
 ---
 
 ## 📊 Project Structure
