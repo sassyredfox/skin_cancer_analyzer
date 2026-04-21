@@ -1,0 +1,227 @@
+.page {
+    min-height: 100vh;
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+    max-width: 1240px;
+    margin: 0 auto;
+    padding: 0 22px;
+}
+
+.main {
+    padding: 30px 0 28px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.hero {
+    max-width: 520px;
+}
+
+.heroRow {
+    display: grid;
+    grid-template-columns: 1.1fr 0.9fr;
+    gap: 18px;
+    align-items: start;
+}
+
+.title {
+    font-family: 'Playfair Display', serif;
+    font-size: clamp(2rem, 4.4vw, 3.35rem);
+    font-weight: 400;
+    line-height: 1.05;
+    letter-spacing: -0.02em;
+    color: var(--ink);
+    margin-bottom: 12px;
+}
+
+.title em {
+    font-style: italic;
+    font-weight: 400;
+}
+
+.subtitle {
+    font-size: 0.86rem;
+    line-height: 1.55;
+    color: var(--muted);
+    max-width: 390px;
+}
+
+.heroMeta {
+    background: linear-gradient(180deg, var(--surface), #fbfaf8);
+    border: 1px solid var(--border);
+    border-radius: var(--radius);
+    padding: 14px 15px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.metaLabel {
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 0.54rem;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+    color: var(--muted);
+}
+
+.metaGrid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 8px;
+}
+
+.metaItem {
+    border: 1px solid var(--border);
+    border-radius: 4px;
+    padding: 8px 9px;
+    background: #fff;
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+}
+
+.metaItem span {
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 0.52rem;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: var(--muted);
+}
+
+.metaItem strong {
+    font-size: 0.76rem;
+    font-weight: 500;
+    color: var(--ink);
+}
+
+.captureHint {
+    border-left: 2px solid var(--border);
+    padding: 2px 0 2px 10px;
+}
+
+.captureHint h3 {
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 0.54rem;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: var(--muted);
+    margin-bottom: 4px;
+}
+
+.captureHint p {
+    font-size: 0.76rem;
+    line-height: 1.45;
+    color: var(--muted);
+}
+
+.workspace {
+    display: grid;
+    grid-template-columns: 1.08fr 0.92fr;
+    gap: 16px;
+    align-items: start;
+}
+
+.left,
+.right {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.right {
+    position: sticky;
+    top: 8px;
+}
+
+.supportBand {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 10px;
+}
+
+.supportCard {
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: var(--radius);
+    padding: 10px 12px;
+}
+
+.supportCard h3 {
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 0.54rem;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: var(--muted);
+    margin-bottom: 5px;
+}
+
+.supportCard p {
+    font-size: 0.74rem;
+    line-height: 1.45;
+    color: var(--muted);
+}
+
+.errorBox {
+    background: var(--red-bg);
+    border: 1px solid rgba(139, 26, 26, 0.2);
+    border-radius: var(--radius);
+    padding: 11px 14px;
+    font-size: 0.76rem;
+    color: var(--red);
+    display: flex;
+    gap: 10px;
+    align-items: flex-start;
+    font-family: 'IBM Plex Mono', monospace;
+}
+
+.footer {
+    border-top: 1px solid var(--border);
+    padding: 14px 0;
+    display: flex;
+    justify-content: space-between;
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 0.58rem;
+    letter-spacing: 0.06em;
+    color: var(--border);
+}
+
+@media (max-width: 1100px) {
+    .heroRow {
+        grid-template-columns: 1fr;
+        gap: 16px;
+    }
+    .workspace {
+        grid-template-columns: 1fr;
+    }
+    .right {
+        position: static;
+    }
+    .supportBand {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media (max-width: 768px) {
+    .page {
+        padding: 0 14px;
+    }
+    .main {
+        padding: 20px 0 24px;
+        gap: 16px;
+    }
+    .heroMeta {
+        padding: 12px 12px;
+    }
+    .metaGrid {
+        grid-template-columns: 1fr;
+    }
+    .supportBand {
+        grid-template-columns: 1fr;
+    }
+    .footer {
+        flex-direction: column;
+        gap: 6px;
+        align-items: flex-start;
+    }
+}

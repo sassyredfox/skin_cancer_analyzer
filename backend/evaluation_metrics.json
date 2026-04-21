@@ -1,0 +1,71 @@
+{
+  "runtime": {
+    "device": "privateuseone:0",
+    "device_backend": "directml",
+    "device_name": "DirectML GPU",
+    "image_size": 192
+  },
+  "test": {
+    "test_accuracy": 0.8063872255489022,
+    "test_precision_weighted": 0.7850540188575557,
+    "test_recall_weighted": 0.8063872255489022,
+    "test_f1_weighted": 0.7876357110944515
+  },
+  "classification_report": {
+    "nv": {
+      "precision": 0.8469656992084432,
+      "recall": 0.9567809239940388,
+      "f1-score": 0.8985304408677397,
+      "support": 671.0
+    },
+    "mel": {
+      "precision": 0.6911764705882353,
+      "recall": 0.41964285714285715,
+      "f1-score": 0.5222222222222223,
+      "support": 112.0
+    },
+    "bkl": {
+      "precision": 0.6842105263157895,
+      "recall": 0.4727272727272727,
+      "f1-score": 0.5591397849462365,
+      "support": 110.0
+    },
+    "bcc": {
+      "precision": 0.6981132075471698,
+      "recall": 0.7115384615384616,
+      "f1-score": 0.7047619047619047,
+      "support": 52.0
+    },
+    "akiec": {
+      "precision": 0.625,
+      "recall": 0.625,
+      "f1-score": 0.625,
+      "support": 32.0
+    },
+    "vasc": {
+      "precision": 0.6666666666666666,
+      "recall": 0.7142857142857143,
+      "f1-score": 0.689655172413793,
+      "support": 14.0
+    },
+    "df": {
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1-score": 0.0,
+      "support": 11.0
+    },
+    "accuracy": 0.8063872255489022,
+    "macro avg": {
+      "precision": 0.6017332243323292,
+      "recall": 0.5571393185269063,
+      "f1-score": 0.571329932173128,
+      "support": 1002.0
+    },
+    "weighted avg": {
+      "precision": 0.7850540188575557,
+      "recall": 0.8063872255489022,
+      "f1-score": 0.7876357110944515,
+      "support": 1002.0
+    }
+  }
+}

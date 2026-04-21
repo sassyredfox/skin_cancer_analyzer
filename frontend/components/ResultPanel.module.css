@@ -1,0 +1,293 @@
+.card {
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: var(--radius);
+    padding: 20px;
+    animation: fadeUp 0.35s ease;
+}
+
+@keyframes fadeUp {
+    from {
+        opacity: 0;
+        transform: translateY(10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.topRow {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 12px;
+}
+
+.severityBadge {
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 0.6rem;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    padding: 3px 10px;
+    border-radius: 3px;
+    font-weight: 500;
+}
+
+.sev_low {
+    background: var(--green-bg);
+    color: var(--green);
+}
+
+.sev_medium {
+    background: var(--amber-bg);
+    color: var(--amber);
+}
+
+.sev_high {
+    background: var(--red-bg);
+    color: var(--red);
+}
+
+.sev_none {
+    background: #f0f0ee;
+    color: var(--muted);
+}
+
+.uncertainName {
+    color: var(--muted);
+    font-style: italic;
+}
+
+.benigntag {
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 0.6rem;
+    letter-spacing: 0.08em;
+    color: var(--muted);
+}
+
+.diagnosisName {
+    font-family: 'Playfair Display', serif;
+    font-size: 1.45rem;
+    font-weight: 400;
+    letter-spacing: -0.02em;
+    line-height: 1.15;
+    margin-bottom: 2px;
+    color: var(--ink);
+}
+
+.diagnosisCode {
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 0.62rem;
+    letter-spacing: 0.1em;
+    color: var(--muted);
+    text-transform: uppercase;
+    margin-bottom: 14px;
+}
+
+.confWrap {
+    margin-bottom: 14px;
+}
+
+.confLabel {
+    display: flex;
+    justify-content: space-between;
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 0.62rem;
+    letter-spacing: 0.08em;
+    color: var(--muted);
+    margin-bottom: 8px;
+}
+
+.confPct {
+    color: var(--ink);
+    font-weight: 500;
+}
+
+.confBar {
+    height: 2px;
+    background: var(--border);
+    border-radius: 1px;
+    overflow: hidden;
+}
+
+.confFill {
+    height: 100%;
+    border-radius: 1px;
+    transition: width 0.8s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.fill_low {
+    background: var(--green);
+}
+
+.fill_medium {
+    background: var(--amber);
+}
+
+.fill_high {
+    background: var(--red);
+}
+
+.desc {
+    font-size: 0.78rem;
+    line-height: 1.58;
+    color: var(--muted);
+    margin-bottom: 12px;
+}
+
+.rec {
+    border-left: 2px solid;
+    padding: 10px 12px;
+    border-radius: 0 4px 4px 0;
+    margin-bottom: 16px;
+    font-size: 0.76rem;
+    line-height: 1.5;
+}
+
+.rec p {
+    color: var(--muted);
+}
+
+.recLabel {
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 0.58rem;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+    margin-bottom: 4px;
+}
+
+.rec_low {
+    border-color: var(--green);
+    background: var(--green-bg);
+}
+
+.rec_low .recLabel {
+    color: var(--green);
+}
+
+.rec_medium {
+    border-color: var(--amber);
+    background: var(--amber-bg);
+}
+
+.rec_medium .recLabel {
+    color: var(--amber);
+}
+
+.rec_high {
+    border-color: var(--red);
+    background: var(--red-bg);
+}
+
+.rec_high .recLabel {
+    color: var(--red);
+}
+
+.rec_none {
+    border-color: var(--border);
+    background: #f8f7f5;
+}
+
+.rec_none .recLabel {
+    color: var(--muted);
+}
+
+.allScores {
+    border-top: 1px solid var(--border);
+    padding-top: 12px;
+}
+
+.scoresLabel {
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 0.58rem;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+    color: var(--muted);
+    margin-bottom: 8px;
+}
+
+.scoreRow {
+    display: grid;
+    grid-template-columns: 48px 1fr 44px;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 6px;
+}
+
+.scoreCode {
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 0.62rem;
+    letter-spacing: 0.06em;
+    color: var(--muted);
+    text-transform: uppercase;
+}
+
+.scoreTrack {
+    height: 2px;
+    background: var(--border);
+    border-radius: 1px;
+    overflow: hidden;
+}
+
+.scoreBar {
+    height: 100%;
+    background: var(--border);
+    border-radius: 1px;
+    transition: width 0.6s ease;
+}
+
+.scoreBarActive {
+    background: var(--ink);
+}
+
+.scorePct {
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 0.6rem;
+    color: var(--muted);
+    text-align: right;
+}
+
+.skeleton {
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: var(--radius);
+    padding: 20px;
+    animation: shimmer 1.4s ease-in-out infinite;
+}
+
+@keyframes shimmer {
+    0%,
+    100% {
+        opacity: 0.6;
+    }
+    50% {
+        opacity: 1;
+    }
+}
+
+.skRow {
+    height: 12px;
+    background: var(--border);
+    border-radius: 4px;
+    margin-bottom: 14px;
+}
+
+.wide {
+    width: 70%;
+}
+
+.medium {
+    width: 50%;
+}
+
+.narrow {
+    width: 30%;
+}
+
+.skBar {
+    height: 2px;
+    background: var(--border);
+    border-radius: 1px;
+    margin-top: 24px;
+}

@@ -1,0 +1,26 @@
+.wrap {
+    display: flex;
+    gap: 12px;
+    align-items: flex-start;
+    background: var(--red-bg);
+    border: 1px solid rgba(139, 26, 26, 0.15);
+    border-radius: var(--radius);
+    padding: 14px 18px;
+}
+
+.icon {
+    flex-shrink: 0;
+    color: var(--red);
+    margin-top: 1px;
+}
+
+.text {
+    font-size: 0.78rem;
+    line-height: 1.65;
+    color: var(--muted);
+}
+
+.strong {
+    color: var(--red);
+    font-weight: 500;
+}

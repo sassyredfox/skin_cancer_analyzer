@@ -1,0 +1,13 @@
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+*.log
+*.tmp
+*.pt.tmp
+data/
+training_metrics.json
+evaluation_metrics.json
+*.keras
+*.h5
+*.pkl
